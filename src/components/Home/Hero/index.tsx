@@ -20,7 +20,7 @@ export default function Hero() {
               <span className='text-[#efc061]'>Electrical</span> & <span className='text-[#95e5e9]'>Plumbing</span> Solutions for Your Home
             </h1>
             <p className='text-dark-text mb-12 text-base'>
-              Hendricks' fully-licensed professionals have kept homes running for 22 years. What can we do for your home?
+              Hendricks&apos; fully-licensed professionals have kept homes running for 22 years. What can we do for your home?
             </p>
             <div className='flex flex-wrap items-center justify-center'>
               <a
