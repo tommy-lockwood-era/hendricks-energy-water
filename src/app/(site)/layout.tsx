@@ -6,16 +6,16 @@ import "@/styles/globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
-import { Winky_Rough } from "next/font/google";
+//import { Stack } from "next/font/google";
 import localFont from 'next/font/local';
 import NextTopLoader from "nextjs-toploader";
 import ToasterContext from "../context/ToastContext";
 
-const winkyRough = Winky_Rough({
-  subsets: ["latin"],
-  weight: ['400','700'],
-  display: 'auto'
-});
+// const winkyRough = Winky_Rough({
+//   subsets: ["latin"],
+//   weight: ['400','700'],
+//   display: 'auto'
+// });
 
 const zalandoSans = localFont({
   src: [{

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap') layer(base);
 
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
@@ -8,7 +8,7 @@
 @theme {
   --font-*: initial;
   --font-heading: 'Zalando Sans', sans-serif;
-  --font-body: 'Winky Rough', 'Arial', sans-serif;
+  --font-body: 'Stack Sans Text', 'Arial', sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-xs: 500px;
