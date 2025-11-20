@@ -14,7 +14,7 @@ import ToasterContext from "../context/ToastContext";
 const winkyRough = Winky_Rough({
   subsets: ["latin"],
   weight: ['400','700'],
-  display: 'swap'
+  display: 'auto'
 });
 
 const zalandoSans = localFont({
