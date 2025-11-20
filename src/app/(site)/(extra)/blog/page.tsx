@@ -1,7 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import { getPosts } from "@/sanity/sanity-utils";
 import { Metadata } from "next";
-import { integrations, messages } from "../../../../integrations.config";
+import { integrations, messages } from "../../../../../integrations.config";
 
 const siteName = process.env.SITE_NAME;
 
