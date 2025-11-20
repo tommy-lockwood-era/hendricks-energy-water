@@ -8,10 +8,9 @@ skipping any of them.
 3. [Authentication](https://nextjstemplates.com/docs/authentication)
 4. [Sanity Integration](https://nextjstemplates.com/docs/sanity)
 5. [Markdown Integration](https://nextjstemplates.com/docs/markdown)
-6. [Stripe Integration](https://nextjstemplates.com/docs/stripe)
-7. [Algolia Integration](https://nextjstemplates.com/docs/algolia)
-8. [MailChimp Integration](https://nextjstemplates.com/docs/mailchimp)
-9. [SMTP Configuration](https://nextjstemplates.com/docs/resend)
+6. [Algolia Integration](https://nextjstemplates.com/docs/algolia)
+7. [MailChimp Integration](https://nextjstemplates.com/docs/mailchimp)
+8. [SMTP Configuration](https://nextjstemplates.com/docs/resend)
 
 ---
 

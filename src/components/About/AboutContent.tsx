@@ -40,7 +40,7 @@ export default function AboutContent() {
       <div className='w-full'>
         {activeTab === "about" && (
           <TabPanel
-            title='DB, Auth, Stripe, Sanity, and More'
+            title='DB, Auth, Sanity, and More'
             image1='/images/about/image-1.jpg'
             image1Alt='about image 1'
             image2='/images/about/image-2.jpg'

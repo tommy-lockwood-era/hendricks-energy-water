@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { pricingData } from "../../../stripe/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
 
@@ -68,9 +67,6 @@ export default function Pricing() {
               </defs>
             </svg>
           </div>
-          {pricingData.map((price) => (
-            <SinglePricing price={price} key={price.id} />
-          ))}
         </div>
 
         <div className="pt-12 text-center">
