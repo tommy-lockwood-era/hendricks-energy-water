@@ -1,8 +1,41 @@
 "use client";
 
+import { neon } from '@neondatabase/serverless';
 import Image from "next/image";
 
 export default function Hero() {
+  async function createSubscriptionsTable() {
+    'use server';
+    
+    const sql = neon(`${process.env.DATABASE_URL}`); // Connect to Neon db
+    
+    await sql`CREATE TABLE subscriptions (
+      email TEXT PRIMARY KEY,
+      weekly_newsletter BOOLEAN NOT NULL DEFAULT FALSE,
+      monthly_newsletter BOOLEAN NOT NULL DEFAULT FALSE,
+      promotions BOOLEAN NOT NULL DEFAULT FALSE,
+      tips_and_tricks BOOLEAN NOT NULL DEFAULT FALSE,
+      last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );`;
+  }
+
+  async function getSubscriptionInfo(email: string) {
+    'use server';
+    
+    const sql = neon(`${process.env.DATABASE_URL}`); // Connect to Neon db
+    
+    return await sql`SELECT weekly_newsletter, monthly_newsletter, promotions, tips_and_tricks FROM subscriptions WHERE email = ${email};`
+  }
+
+  async function create(formData: FormData) {
+    'use server';
+    // Connect to the Neon database
+    const sql = neon(`${process.env.DATABASE_URL}`);
+    const comment = formData.get('comment');
+    // Insert the comment from the form into the Postgres database
+    await sql`INSERT INTO comments (comment) VALUES (${comment})`;
+  }
+
   return (
     <section
       id='home'
